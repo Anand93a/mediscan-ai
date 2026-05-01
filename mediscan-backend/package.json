@@ -1,0 +1,22 @@
+{
+  "name": "mediscan-ai-backend",
+  "version": "2.0.0",
+  "description": "MediScan AI — OCR + Disease Prediction Backend (Modular)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["health", "ai", "ocr", "prediction", "mediscan"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "multer": "^2.1.1",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

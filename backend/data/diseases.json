@@ -1,0 +1,437 @@
+[
+  {
+    "id": "d1776969143855",
+    "disease": "iyghj",
+    "symptoms": [
+      "ughjgj"
+    ],
+    "precautions": [
+      "jhghj"
+    ],
+    "medicines": [
+      "uygyug"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d1776969033148",
+    "disease": "uyfuyjh",
+    "symptoms": [
+      "hjghj"
+    ],
+    "precautions": [
+      "kjhfgjuh"
+    ],
+    "medicines": [
+      "gygyuyjh"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d1776968924816",
+    "disease": "ytdfhg",
+    "symptoms": [
+      "hgfdgh"
+    ],
+    "precautions": [
+      "utftfdyhg"
+    ],
+    "medicines": [
+      "ytty"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d1776968884602",
+    "disease": "Test Disease",
+    "symptoms": [
+      "test1",
+      "test2"
+    ]
+  },
+  {
+    "id": "d1",
+    "disease": "Common Flu (Influenza)",
+    "symptoms": [
+      "fever",
+      "cough",
+      "sore throat",
+      "body ache",
+      "fatigue",
+      "chills",
+      "headache",
+      "runny nose"
+    ],
+    "precautions": [
+      "Rest and stay hydrated",
+      "Take OTC flu medication",
+      "Avoid contact",
+      "Cover mouth",
+      "Consult doctor"
+    ],
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Cetirizine",
+      "Dextromethorphan",
+      "Vitamin C"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d2",
+    "disease": "Common Cold",
+    "symptoms": [
+      "runny nose",
+      "sneezing",
+      "sore throat",
+      "mild cough",
+      "congestion",
+      "watery eyes"
+    ],
+    "precautions": [
+      "Rest",
+      "Warm fluids",
+      "Saline drops",
+      "Salt water gargle",
+      "Wash hands"
+    ],
+    "medicines": [
+      "Antihistamines",
+      "Nasal decongestant",
+      "Cough syrup",
+      "Throat lozenges"
+    ],
+    "severity": "low"
+  },
+  {
+    "id": "d3",
+    "disease": "COVID-19 (Suspected)",
+    "symptoms": [
+      "fever",
+      "dry cough",
+      "loss of taste",
+      "loss of smell",
+      "shortness of breath",
+      "fatigue",
+      "body ache"
+    ],
+    "precautions": [
+      "Isolate",
+      "Monitor oxygen",
+      "Stay hydrated",
+      "Seek emergency help if breathing difficult"
+    ],
+    "medicines": [
+      "Paracetamol",
+      "Dolo 650",
+      "ORS",
+      "Zinc",
+      "Vitamin D"
+    ],
+    "severity": "high"
+  },
+  {
+    "id": "d4",
+    "disease": "Migraine",
+    "symptoms": [
+      "headache",
+      "nausea",
+      "sensitivity to light",
+      "blurred vision",
+      "dizziness",
+      "vomiting"
+    ],
+    "precautions": [
+      "Dark room rest",
+      "Cold compress",
+      "Stay hydrated",
+      "Avoid triggers",
+      "Medication"
+    ],
+    "medicines": [
+      "Sumatriptan",
+      "Ibuprofen",
+      "Aspirin",
+      "Ergotamine"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d5",
+    "disease": "Gastroenteritis (Stomach Flu)",
+    "symptoms": [
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "stomach pain",
+      "fever",
+      "dehydration",
+      "cramps"
+    ],
+    "precautions": [
+      "Stay hydrated (ORS)",
+      "Bland foods",
+      "Avoid dairy",
+      "Rest"
+    ],
+    "medicines": [
+      "ORS",
+      "Ondansetron",
+      "Loperamide",
+      "Probiotics"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d6",
+    "disease": "Allergic Rhinitis",
+    "symptoms": [
+      "sneezing",
+      "runny nose",
+      "itchy eyes",
+      "watery eyes",
+      "congestion",
+      "itchy throat"
+    ],
+    "precautions": [
+      "Avoid allergens",
+      "Antihistamines",
+      "Closed windows",
+      "Air purifiers"
+    ],
+    "medicines": [
+      "Cetirizine",
+      "Loratadine",
+      "Fluticasone",
+      "Montelukast"
+    ],
+    "severity": "low"
+  },
+  {
+    "id": "d7",
+    "disease": "Bronchitis",
+    "symptoms": [
+      "persistent cough",
+      "mucus production",
+      "chest discomfort",
+      "fatigue",
+      "shortness of breath",
+      "mild fever"
+    ],
+    "precautions": [
+      "Avoid smoke",
+      "Use humidifier",
+      "Drink fluids",
+      "Rest"
+    ],
+    "medicines": [
+      "Ambroxol",
+      "Dextromethorphan",
+      "Salbutamol",
+      "Acetylcysteine"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d8",
+    "disease": "Pneumonia (Suspected)",
+    "symptoms": [
+      "high fever",
+      "severe cough",
+      "chest pain",
+      "shortness of breath",
+      "fatigue",
+      "chills",
+      "sweating"
+    ],
+    "precautions": [
+      "Immediate MD attention",
+      "Antibiotics",
+      "Rest",
+      "Hydrate"
+    ],
+    "medicines": [
+      "Amoxicillin",
+      "Azithromycin",
+      "Levofloxacin",
+      "Paracetamol"
+    ],
+    "severity": "high"
+  },
+  {
+    "id": "d9",
+    "disease": "Urinary Tract Infection (UTI)",
+    "symptoms": [
+      "burning urination",
+      "frequent urination",
+      "lower abdominal pain",
+      "cloudy urine",
+      "fever",
+      "back pain"
+    ],
+    "precautions": [
+      "Plenty of water",
+      "Antibiotics",
+      "Avoid caffeine",
+      "Hygiene"
+    ],
+    "medicines": [
+      "Nitrofurantoin",
+      "Ciprofloxacin",
+      "Trimethoprim",
+      "Cranberry extract"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d10",
+    "disease": "Dehydration",
+    "symptoms": [
+      "thirst",
+      "dry mouth",
+      "dizziness",
+      "fatigue",
+      "dark urine",
+      "headache",
+      "dry skin"
+    ],
+    "precautions": [
+      "Water/Electrolytes",
+      "Avoid caffeine",
+      "Rest in cool area"
+    ],
+    "medicines": [
+      "ORS",
+      "Electrolyte sachets",
+      "Coconut water"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d11",
+    "disease": "Hypertension Alert",
+    "symptoms": [
+      "headache",
+      "dizziness",
+      "blurred vision",
+      "chest pain",
+      "shortness of breath",
+      "nosebleed"
+    ],
+    "precautions": [
+      "Monitor BP",
+      "Reduce salt",
+      "Medication",
+      "Avoid stress"
+    ],
+    "medicines": [
+      "Amlodipine",
+      "Losartan",
+      "Metoprolol",
+      "Hydrochlorothiazide"
+    ],
+    "severity": "high"
+  },
+  {
+    "id": "d12",
+    "disease": "Diabetes Symptoms",
+    "symptoms": [
+      "frequent urination",
+      "excessive thirst",
+      "blurred vision",
+      "fatigue",
+      "slow healing wounds",
+      "weight loss"
+    ],
+    "precautions": [
+      "Test sugar",
+      "Low-sugar diet",
+      "Exercise",
+      "Monitor glucose"
+    ],
+    "medicines": [
+      "Metformin",
+      "Glimepiride",
+      "Insulin",
+      "Sitagliptin"
+    ],
+    "severity": "high"
+  },
+  {
+    "id": "d13",
+    "disease": "Anxiety Disorder",
+    "symptoms": [
+      "restlessness",
+      "rapid heartbeat",
+      "sweating",
+      "trembling",
+      "difficulty concentrating",
+      "insomnia",
+      "irritability"
+    ],
+    "precautions": [
+      "Deep breathing",
+      "Exercise",
+      "Limit caffeine",
+      "Regular sleep"
+    ],
+    "medicines": [
+      "Escitalopram",
+      "Sertraline",
+      "Propranolol",
+      "Buspirone"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d14",
+    "disease": "Food Poisoning",
+    "symptoms": [
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "stomach cramps",
+      "fever",
+      "weakness"
+    ],
+    "precautions": [
+      "ORS",
+      "Avoid solid food",
+      "Rest",
+      "Gradual bland food"
+    ],
+    "medicines": [
+      "ORS",
+      "Ondansetron",
+      "Loperamide",
+      "Probiotics"
+    ],
+    "severity": "moderate"
+  },
+  {
+    "id": "d15",
+    "disease": "Conjunctivitis (Pink Eye)",
+    "symptoms": [
+      "red eyes",
+      "itchy eyes",
+      "watery eyes",
+      "eye discharge",
+      "swollen eyelids",
+      "sensitivity to light"
+    ],
+    "precautions": [
+      "Don't touch eyes",
+      "Wash hands",
+      "Antibiotic drops",
+      "Warm compress"
+    ],
+    "medicines": [
+      "Moxifloxacin",
+      "Tobramycin",
+      "Artificial tears",
+      "Olopatadine"
+    ],
+    "severity": "low"
+  }
+]

@@ -1,0 +1,1542 @@
+2026-04-23 22:05:51 [INFO] 🏥 MediScan AI Backend Server started
+2026-04-23 22:05:51 [INFO]    Running on: http://localhost:5001
+2026-04-23 22:05:51 [INFO]    ML Service:  http://localhost:5002
+2026-04-23 22:05:51 [INFO]    API Endpoint: POST http://localhost:5001/api/predict
+2026-04-23 22:05:51 [INFO]    Health Check: GET  http://localhost:5001/api/health
+2026-04-23 22:06:05 [INFO] Calling Flask ML service {"symptoms":["fever","cough","headache"]}
+2026-04-23 22:06:05 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 22:06:05 [INFO] Prediction complete {"symptoms":["fever","cough","headache"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":24}
+2026-04-23 22:06:39 [INFO] Calling Flask ML service {"symptoms":["headache","nausea","sensitivity to light","dizziness"]}
+2026-04-23 22:06:39 [INFO] ML service responded successfully {"disease":"Migraine","confidence":100,"source":"ml_model"}
+2026-04-23 22:06:39 [INFO] Prediction complete {"symptoms":["headache","nausea","sensitivity to light","dizziness"],"disease":"Migraine","confidence":100,"source":"ml_model","latency_ms":5}
+2026-04-23 22:07:00 [INFO] Calling Flask ML service {"symptoms":["fever","diarrhea","nausea"]}
+2026-04-23 22:07:00 [INFO] ML service responded successfully {"disease":"Food Poisoning","confidence":100,"source":"ml_model"}
+2026-04-23 22:07:00 [INFO] Prediction complete {"symptoms":["fever","diarrhea","nausea"],"disease":"Food Poisoning","confidence":100,"source":"ml_model","latency_ms":14}
+2026-04-23 22:32:48 [INFO] 🏥 MediScan AI Backend Server started
+2026-04-23 22:32:48 [INFO]    Running on: http://localhost:5001
+2026-04-23 22:32:48 [INFO]    ML Service:  http://localhost:5002
+2026-04-23 22:32:48 [INFO]    API Endpoint: POST http://localhost:5001/api/predict
+2026-04-23 22:32:48 [INFO]    Model Info:   GET  http://localhost:5001/api/model-info
+2026-04-23 22:32:48 [INFO]    History:      GET  http://localhost:5001/api/history
+2026-04-23 22:32:48 [INFO]    Health Check: GET  http://localhost:5001/api/health
+2026-04-23 22:32:58 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":20}
+2026-04-23 22:32:59 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":4}
+2026-04-23 22:32:59 [INFO] Calling Flask ML service {"symptoms":["fever","cough","headache"]}
+2026-04-23 22:32:59 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 22:32:59 [INFO] Prediction complete {"symptoms":["fever","cough","headache"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":32}
+2026-04-23 22:32:59 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":33}
+2026-04-23 22:33:09 [INFO] Calling Flask ML service {"symptoms":["red eyes","itchy eyes","watery eyes"]}
+2026-04-23 22:33:09 [INFO] ML service responded successfully {"disease":"Allergic Rhinitis","confidence":100,"source":"ml_model"}
+2026-04-23 22:33:09 [INFO] Prediction complete {"symptoms":["red eyes","itchy eyes","watery eyes"],"disease":"Allergic Rhinitis","confidence":100,"source":"ml_model","latency_ms":3}
+2026-04-23 22:33:09 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":4}
+2026-04-23 22:33:09 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":0}
+2026-04-23 22:33:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":2}
+2026-04-23 22:37:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":6}
+2026-04-23 22:37:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":35}
+2026-04-23 22:37:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":40}
+2026-04-23 22:37:46 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 22:37:46 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:37:46 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":13}
+2026-04-23 22:37:46 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":14}
+2026-04-23 22:38:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:38:26 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:38:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":12}
+2026-04-23 22:38:26 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":13}
+2026-04-23 22:38:35 [INFO] Calling Flask ML service {"symptoms":["fatigue"]}
+2026-04-23 22:38:35 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:38:35 [INFO] Prediction complete {"symptoms":["fatigue"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":21}
+2026-04-23 22:38:35 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":22}
+2026-04-23 22:38:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:39:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:39:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:39:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":9}
+2026-04-23 22:39:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":10}
+2026-04-23 22:40:08 [INFO] Calling Flask ML service {"symptoms":["pet dard"]}
+2026-04-23 22:40:08 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:40:08 [INFO] Prediction complete {"symptoms":["pet dard"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":8}
+2026-04-23 22:40:08 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-23 22:40:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:40:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-23 22:40:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:40:28 [INFO] Calling Flask ML service {"symptoms":["body ache"]}
+2026-04-23 22:40:28 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:40:28 [INFO] Prediction complete {"symptoms":["body ache"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":7}
+2026-04-23 22:40:28 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-23 22:40:37 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:40:37 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:40:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:41:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:41:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:43:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:44:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:44:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 22:44:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:44:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:44:31 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":7}
+2026-04-23 22:44:38 [INFO] Calling Flask ML service {"symptoms":["cough"]}
+2026-04-23 22:44:38 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 22:44:38 [INFO] Prediction complete {"symptoms":["cough"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":15}
+2026-04-23 22:44:38 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":16}
+2026-04-23 22:44:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:44:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:44:58 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 22:44:58 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:44:58 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":7}
+2026-04-23 22:44:58 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-23 22:45:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:45:06 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:45:06 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:45:09 [INFO] Calling Flask ML service {"symptoms":["shortness of breath"]}
+2026-04-23 22:45:09 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:45:09 [INFO] Prediction complete {"symptoms":["shortness of breath"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":14}
+2026-04-23 22:45:09 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":15}
+2026-04-23 22:45:24 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:45:24 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:45:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:46:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:46:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 22:47:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 22:47:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 22:48:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 22:48:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 22:49:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 22:49:09 [INFO] Calling Flask ML service {"symptoms":["fatigue"]}
+2026-04-23 22:49:09 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:49:09 [INFO] Prediction complete {"symptoms":["fatigue"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":18}
+2026-04-23 22:49:09 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":20}
+2026-04-23 22:49:14 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:49:14 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:49:20 [INFO] Calling Flask ML service {"symptoms":["cough"]}
+2026-04-23 22:49:20 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 22:49:20 [INFO] Prediction complete {"symptoms":["cough"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":7}
+2026-04-23 22:49:20 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-23 22:49:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:49:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:49:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":9}
+2026-04-23 22:49:36 [INFO] Calling Flask ML service {"symptoms":["cough","fever"]}
+2026-04-23 22:49:36 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 22:49:36 [INFO] Prediction complete {"symptoms":["cough","fever"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":24}
+2026-04-23 22:49:36 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":24}
+2026-04-23 22:49:42 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:49:42 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:49:44 [INFO] Calling Flask ML service {"symptoms":["body ache"]}
+2026-04-23 22:49:44 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:49:44 [INFO] Prediction complete {"symptoms":["body ache"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":10}
+2026-04-23 22:49:44 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-23 22:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:50:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:50:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":15}
+2026-04-23 22:51:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:51:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:52:09 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-23 22:52:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":29}
+2026-04-23 22:52:09 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":18}
+2026-04-23 22:52:13 [INFO] Calling Flask ML service {"symptoms":["fatigue"]}
+2026-04-23 22:52:13 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:52:13 [INFO] Prediction complete {"symptoms":["fatigue"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":11}
+2026-04-23 22:52:13 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-23 22:52:19 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:52:19 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:52:22 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 22:52:22 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:52:22 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":11}
+2026-04-23 22:52:22 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":12}
+2026-04-23 22:52:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:53:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":4}
+2026-04-23 22:53:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":16}
+2026-04-23 22:54:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":17}
+2026-04-23 22:54:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 22:55:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:56:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":14}
+2026-04-23 22:56:54 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-23 22:56:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":36}
+2026-04-23 22:56:54 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":19}
+2026-04-23 22:56:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":4}
+2026-04-23 22:57:06 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 22:57:06 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:57:06 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":10}
+2026-04-23 22:57:06 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-23 22:57:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:57:18 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:57:18 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:57:23 [INFO] Calling Flask ML service {"symptoms":["runny nose"]}
+2026-04-23 22:57:23 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 22:57:23 [INFO] Prediction complete {"symptoms":["runny nose"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":8}
+2026-04-23 22:57:23 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-23 22:57:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:57:29 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 22:57:29 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 22:57:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":14}
+2026-04-23 22:57:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:58:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":10}
+2026-04-23 22:58:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 22:59:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-23 22:59:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":4}
+2026-04-23 22:59:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":2}
+2026-04-23 22:59:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 22:59:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-23 23:00:20 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 23:01:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":20}
+2026-04-23 23:01:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":2}
+2026-04-23 23:01:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":13}
+2026-04-23 23:01:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":2}
+2026-04-23 23:02:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-23 23:02:24 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":3}
+2026-04-23 23:02:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":197}
+2026-04-23 23:02:24 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":198}
+2026-04-23 23:02:33 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":19}
+2026-04-23 23:02:33 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-23 23:03:01 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-23 23:03:01 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-23 23:03:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":16}
+2026-04-23 23:03:19 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":18}
+2026-04-23 23:03:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":22}
+2026-04-23 23:03:19 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":2}
+2026-04-23 23:03:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-23 23:03:28 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":0}
+2026-04-23 23:03:28 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":0}
+2026-04-23 23:03:28 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":9}
+2026-04-23 23:03:28 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":6}
+2026-04-23 23:03:28 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 23:03:28 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":6}
+2026-04-23 23:03:41 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:03:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 23:03:41 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":8}
+2026-04-23 23:04:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":14}
+2026-04-23 23:04:12 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":4}
+2026-04-23 23:04:38 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":0}
+2026-04-23 23:04:38 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":16}
+2026-04-23 23:04:38 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":15}
+2026-04-23 23:04:56 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":17}
+2026-04-23 23:04:56 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-23 23:05:04 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":18}
+2026-04-23 23:11:36 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-23 23:11:36 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:11:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:11:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:12:16 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:12:16 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:12:25 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 23:12:25 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:12:25 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":48}
+2026-04-23 23:12:25 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":48}
+2026-04-23 23:13:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:13:38 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":27}
+2026-04-23 23:13:38 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":27}
+2026-04-23 23:14:08 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":2}
+2026-04-23 23:14:16 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":1}
+2026-04-23 23:14:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 23:14:16 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-23 23:14:21 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":8}
+2026-04-23 23:14:21 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-23 23:14:37 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":6}
+2026-04-23 23:16:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:16:59 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":32}
+2026-04-23 23:16:59 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":28}
+2026-04-23 23:18:08 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 23:18:08 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:18:08 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":27}
+2026-04-23 23:18:08 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":27}
+2026-04-23 23:18:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:18:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 23:18:21 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":7}
+2026-04-23 23:18:22 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:18:22 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":4}
+2026-04-23 23:18:22 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":4}
+2026-04-23 23:18:46 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 23:18:46 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:18:46 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":16}
+2026-04-23 23:18:46 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":17}
+2026-04-23 23:18:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":9}
+2026-04-23 23:18:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 23:18:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:18:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:18:58 [INFO] Calling Flask ML service {"symptoms":["runny nose"]}
+2026-04-23 23:18:58 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:18:58 [INFO] Prediction complete {"symptoms":["runny nose"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":7}
+2026-04-23 23:18:58 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-23 23:19:19 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":0}
+2026-04-23 23:19:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":12}
+2026-04-23 23:19:19 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":11}
+2026-04-23 23:19:24 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-23 23:19:24 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":4}
+2026-04-23 23:26:39 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-23 23:26:39 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":21}
+2026-04-23 23:26:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":24}
+2026-04-23 23:26:45 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 23:26:45 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:26:45 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":18}
+2026-04-23 23:26:45 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":20}
+2026-04-23 23:26:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:26:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:40:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:40:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":20}
+2026-04-23 23:40:11 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":22}
+2026-04-23 23:40:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":7}
+2026-04-23 23:41:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":6}
+2026-04-23 23:41:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-23 23:42:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":26}
+2026-04-23 23:46:49 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:46:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":27}
+2026-04-23 23:46:49 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":25}
+2026-04-23 23:47:20 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":12}
+2026-04-23 23:47:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 23:48:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":15}
+2026-04-23 23:48:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":11}
+2026-04-23 23:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-23 23:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":31}
+2026-04-23 23:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":30}
+2026-04-23 23:50:06 [INFO] Calling Flask ML service {"symptoms":["fever"]}
+2026-04-23 23:50:06 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:50:06 [INFO] Prediction complete {"symptoms":["fever"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":21}
+2026-04-23 23:50:06 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":21}
+2026-04-23 23:50:16 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:50:16 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-23 23:50:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 23:50:27 [INFO] Calling Flask ML service {"symptoms":["headache"]}
+2026-04-23 23:50:27 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 23:50:27 [INFO] Prediction complete {"symptoms":["headache"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":7}
+2026-04-23 23:50:27 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-23 23:51:03 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-23 23:51:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":33}
+2026-04-23 23:51:03 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":21}
+2026-04-23 23:51:13 [INFO] Calling Flask ML service {"symptoms":["fatigue"]}
+2026-04-23 23:51:13 [INFO] ML service responded successfully {"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model"}
+2026-04-23 23:51:13 [INFO] Prediction complete {"symptoms":["fatigue"],"disease":"COVID-19 (Suspected)","confidence":26,"source":"ml_model","latency_ms":11}
+2026-04-23 23:51:13 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":13}
+2026-04-23 23:51:19 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:51:19 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:51:27 [INFO] Calling Flask ML service {"symptoms":["cough"]}
+2026-04-23 23:51:28 [INFO] ML service responded successfully {"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model"}
+2026-04-23 23:51:28 [INFO] Prediction complete {"symptoms":["cough"],"disease":"Common Flu (Influenza)","confidence":100,"source":"ml_model","latency_ms":7}
+2026-04-23 23:51:28 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-23 23:51:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 23:51:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-23 23:51:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:52:18 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-23 23:52:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":10}
+2026-04-23 23:52:18 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-23 23:52:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":10}
+2026-04-23 23:53:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":8}
+2026-04-23 23:53:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":5}
+2026-04-23 23:54:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":9}
+2026-04-23 23:54:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":13}
+2026-04-23 23:54:54 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":404,"latency_ms":56}
+2026-04-23 23:54:54 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":404,"latency_ms":0}
+2026-04-23 23:55:02 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":404,"latency_ms":2}
+2026-04-23 23:55:17 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":404,"latency_ms":1}
+2026-04-23 23:55:25 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":404,"latency_ms":1}
+2026-04-23 23:56:48 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-23 23:57:43 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-23 23:57:56 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":3}
+2026-04-23 23:58:04 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":200,"latency_ms":1}
+2026-04-23 23:58:44 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":200,"latency_ms":2}
+2026-04-23 23:58:44 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":2}
+2026-04-23 23:59:10 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":1}
+2026-04-24 00:00:33 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":200,"latency_ms":0}
+2026-04-24 00:00:33 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":1}
+2026-04-24 00:01:00 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":0}
+2026-04-24 00:01:12 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":0}
+2026-04-24 00:01:12 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":31}
+2026-04-24 00:01:12 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":19}
+2026-04-24 00:01:19 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":31}
+2026-04-24 00:01:27 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-24 00:01:27 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-24 00:01:52 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-24 00:01:52 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":16}
+2026-04-24 00:01:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":10}
+2026-04-24 00:01:57 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-24 00:02:07 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":1}
+2026-04-24 00:02:07 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":1}
+2026-04-24 00:02:23 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":200,"latency_ms":1}
+2026-04-24 00:02:23 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":1}
+2026-04-24 00:02:26 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":1}
+2026-04-24 00:02:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":1}
+2026-04-24 00:02:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 00:02:51 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":7}
+2026-04-24 00:03:02 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-04-24 00:03:09 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-24 00:03:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 00:03:09 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-24 00:03:23 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-24 00:03:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":17}
+2026-04-24 00:03:23 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":11}
+2026-04-24 00:03:35 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-24 00:03:35 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 00:03:35 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-24 00:03:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":0}
+2026-04-24 00:03:46 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 00:03:46 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-24 00:04:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 00:04:46 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 08:27:32 [INFO] ✅ Connected to MongoDB
+2026-04-24 08:27:32 [INFO] 🌱 Seeded 15 diseases into MongoDB
+2026-04-24 08:27:32 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 08:27:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":16}
+2026-04-24 08:27:45 [ERROR] Registration failed:
+2026-04-24 08:27:45 [INFO] HTTP Request {"method":"POST","path":"/api/auth/register","status":500,"latency_ms":268}
+2026-04-24 08:28:33 [INFO] ✅ Connected to MongoDB
+2026-04-24 08:28:33 [INFO] 📊 15 diseases already in database
+2026-04-24 08:28:33 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 08:28:45 [INFO] New user registered {"userId":"69eadc640520c5c47896cef0","email":"admin@mediscan.ai"}
+2026-04-24 08:28:45 [INFO] HTTP Request {"method":"POST","path":"/api/auth/register","status":201,"latency_ms":281}
+2026-04-24 08:29:03 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":25}
+2026-04-24 08:29:04 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":18}
+2026-04-24 08:29:04 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":0}
+2026-04-24 08:29:38 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-24 08:29:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:29:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":35}
+2026-04-24 08:29:51 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":46}
+2026-04-24 08:30:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 08:32:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 08:33:54 [INFO] User logged in {"userId":"69eadc640520c5c47896cef0"}
+2026-04-24 08:33:54 [INFO] HTTP Request {"method":"POST","path":"/api/auth/login","status":200,"latency_ms":307}
+2026-04-24 08:34:37 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:35:22 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:35:22 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 08:38:10 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":332}
+2026-04-24 08:38:10 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":6}
+2026-04-24 08:38:23 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":4}
+2026-04-24 08:38:23 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":7}
+2026-04-24 08:38:45 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":7}
+2026-04-24 08:38:45 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":2}
+2026-04-24 08:38:51 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":401,"latency_ms":5}
+2026-04-24 08:38:51 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":401,"latency_ms":2}
+2026-04-24 08:43:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":3}
+2026-04-24 08:43:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 08:43:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 08:43:20 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":100}
+2026-04-24 08:43:20 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 08:43:20 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":127}
+2026-04-24 08:43:20 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-24 08:43:25 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":14}
+2026-04-24 08:43:36 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 08:43:36 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-24 08:43:41 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-24 08:43:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:43:52 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-24 08:43:52 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 08:43:57 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":13}
+2026-04-24 08:44:02 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 08:44:02 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 08:44:06 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-24 08:44:15 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 08:44:15 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 08:44:33 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":10}
+2026-04-24 08:44:33 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 08:44:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-04-24 08:44:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 08:44:33 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":10}
+2026-04-24 08:44:33 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":4}
+2026-04-24 08:44:35 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:44:35 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:44:35 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":27}
+2026-04-24 08:44:35 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 08:44:54 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":5}
+2026-04-24 08:45:05 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":44}
+2026-04-24 08:45:05 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 08:45:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":24}
+2026-04-24 08:45:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 08:45:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":58}
+2026-04-24 08:45:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":79}
+2026-04-24 08:45:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 08:45:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-24 08:45:43 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":23}
+2026-04-24 08:45:50 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 08:45:50 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 08:45:55 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-24 08:45:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 08:45:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 08:46:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:46:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 08:47:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 08:47:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:47:45 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":28}
+2026-04-24 08:47:57 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":0}
+2026-04-24 08:47:57 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":1}
+2026-04-24 08:47:59 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":401,"latency_ms":3}
+2026-04-24 08:47:59 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":401,"latency_ms":1}
+2026-04-24 08:48:02 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":1}
+2026-04-24 08:48:02 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":3}
+2026-04-24 08:48:39 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":401,"latency_ms":1}
+2026-04-24 08:48:39 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":401,"latency_ms":0}
+2026-04-24 08:48:40 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":2}
+2026-04-24 08:48:40 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":1}
+2026-04-24 08:48:54 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":7}
+2026-04-24 08:48:54 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":4}
+2026-04-24 08:49:12 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":32}
+2026-04-24 08:49:12 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":3}
+2026-04-24 08:50:22 [INFO] HTTP Request {"method":"POST","path":"/api/auth/register","status":400,"latency_ms":12}
+2026-04-24 08:51:06 [INFO] User logged in {"userId":"69eadc640520c5c47896cef0"}
+2026-04-24 08:51:06 [INFO] HTTP Request {"method":"POST","path":"/api/auth/login","status":200,"latency_ms":286}
+2026-04-24 08:51:07 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":85}
+2026-04-24 08:51:28 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 08:53:16 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 08:53:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 08:53:16 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":4}
+2026-04-24 08:53:46 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:53:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 08:53:48 [INFO] HTTP Request {"method":"GET","path":"/favicon.ico","status":404,"latency_ms":18}
+2026-04-24 08:54:15 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":14}
+2026-04-24 08:54:46 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":1}
+2026-04-24 08:54:46 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":1}
+2026-04-24 08:58:00 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":11}
+2026-04-24 08:58:00 [INFO] HTTP Request {"method":"GET","path":"/api/admin/history","status":401,"latency_ms":1}
+2026-04-24 08:58:07 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":50}
+2026-04-24 08:58:07 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":4}
+2026-04-24 08:58:09 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":3}
+2026-04-24 08:58:09 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":9}
+2026-04-24 08:58:33 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":201,"latency_ms":27}
+2026-04-24 08:58:33 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":4}
+2026-04-24 08:58:38 [INFO] HTTP Request {"method":"DELETE","path":"/api/admin/diseases/69eae3610520c5c47896cf0b","status":200,"latency_ms":8}
+2026-04-24 08:58:38 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":7}
+2026-04-24 08:58:42 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":10}
+2026-04-24 08:58:42 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":5}
+2026-04-24 08:58:47 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 08:58:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 08:58:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":17}
+2026-04-24 08:58:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 08:58:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":9}
+2026-04-24 08:58:53 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":33}
+2026-04-24 08:58:53 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":8}
+2026-04-24 08:59:00 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-24 08:59:05 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 08:59:05 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 08:59:41 [INFO] New user registered {"userId":"69eae3a50520c5c47896cf10","email":"anandfgiet2023@gmail.com"}
+2026-04-24 08:59:41 [INFO] HTTP Request {"method":"POST","path":"/api/auth/register","status":201,"latency_ms":308}
+2026-04-24 08:59:42 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 08:59:42 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":6}
+2026-04-24 08:59:47 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 08:59:47 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":22}
+2026-04-24 08:59:47 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":22}
+2026-04-24 09:00:04 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":13}
+2026-04-24 09:00:09 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:00:09 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:00:13 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":5}
+2026-04-24 09:00:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:00:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:00:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:00:36 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":5}
+2026-04-24 09:00:36 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":4}
+2026-04-24 09:00:44 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":403,"latency_ms":16}
+2026-04-24 09:00:44 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":403,"latency_ms":0}
+2026-04-24 09:00:55 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":5}
+2026-04-24 09:00:55 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":3}
+2026-04-24 09:01:10 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":403,"latency_ms":2}
+2026-04-24 09:01:10 [INFO] HTTP Request {"method":"GET","path":"/api/admin/users","status":403,"latency_ms":0}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":5}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":4}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":17}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":22}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":21}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:01:11 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":15}
+2026-04-24 09:01:14 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":3}
+2026-04-24 09:01:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 09:01:14 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 09:01:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:01:26 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:01:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:01:26 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-24 09:01:30 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-24 09:01:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:01:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:01:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:02:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:02:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:03:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:03:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:04:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:04:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:06:39 [INFO] ✅ Connected to MongoDB
+2026-04-24 09:06:39 [INFO] 📊 15 diseases already in database
+2026-04-24 09:06:39 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 09:07:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":16}
+2026-04-24 09:07:37 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":16}
+2026-04-24 09:07:37 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":20}
+2026-04-24 09:07:37 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":6}
+2026-04-24 09:07:38 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":4}
+2026-04-24 09:07:38 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":5}
+2026-04-24 09:08:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:08:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-24 09:08:46 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":10}
+2026-04-24 09:08:46 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":10}
+2026-04-24 09:08:49 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":6}
+2026-04-24 09:08:55 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:08:55 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:09:01 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-24 09:09:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:09:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:09:15 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-24 09:09:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:09:22 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:09:22 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:09:31 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-04-24 09:09:35 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:09:35 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-24 09:09:39 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-04-24 09:09:46 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 09:09:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:09:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:09:52 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-24 09:10:01 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:10:01 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:10:07 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-24 09:10:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:10:24 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:10:24 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:10:28 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-24 09:10:34 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:10:34 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:10:37 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-24 09:10:46 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:10:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:10:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:10:57 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-24 09:11:02 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:11:02 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:11:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:11:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:11:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:11:21 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":38}
+2026-04-24 09:11:21 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:11:45 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":2}
+2026-04-24 09:12:01 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":2}
+2026-04-24 09:12:10 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:12:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 09:12:10 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:12:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:12:14 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:12:31 [INFO] HTTP Request {"method":"GET","path":"/api/auth/me","status":200,"latency_ms":7}
+2026-04-24 09:12:31 [INFO] HTTP Request {"method":"GET","path":"/api/auth/me","status":304,"latency_ms":2}
+2026-04-24 09:12:31 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":6}
+2026-04-24 09:12:31 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 09:12:41 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":4}
+2026-04-24 09:12:42 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":4}
+2026-04-24 09:12:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-04-24 09:12:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 09:12:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:12:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:12:49 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":42}
+2026-04-24 09:12:49 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-24 09:13:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:13:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:14:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:14:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:15:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:15:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:16:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:17:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:18:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:19:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:20:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:21:13 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":19}
+2026-04-24 09:21:13 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":40}
+2026-04-24 09:21:13 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":62}
+2026-04-24 09:21:13 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":93}
+2026-04-24 09:21:43 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:22:13 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:22:43 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:23:13 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:23:33 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:23:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:23:33 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":10}
+2026-04-24 09:24:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:24:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:25:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:25:15 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":11}
+2026-04-24 09:25:32 [INFO] ✅ Connected to MongoDB
+2026-04-24 09:25:32 [INFO] 📊 15 diseases already in database
+2026-04-24 09:25:32 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 09:25:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-04-24 09:26:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:26:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:27:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:28:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:29:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:30:01 [INFO] HTTP Request {"method":"POST","path":"/api/analyze-report","status":200,"latency_ms":1}
+2026-04-24 09:30:01 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":22}
+2026-04-24 09:30:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:30:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:30:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-04-24 09:30:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-24 09:31:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:31:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:31:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:32:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:33:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:34:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:34:38 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:34:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":15}
+2026-04-24 09:34:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":7}
+2026-04-24 09:34:54 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":17}
+2026-04-24 09:34:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":11}
+2026-04-24 09:34:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:35:01 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-24 09:35:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:35:05 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:35:05 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 09:35:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:36:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:36:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 09:36:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-04-24 09:36:18 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":187}
+2026-04-24 09:36:18 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:36:26 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:36:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:36:26 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 09:36:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:36:26 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":57}
+2026-04-24 09:36:26 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":2}
+2026-04-24 09:36:29 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:36:29 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":3}
+2026-04-24 09:36:29 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:36:29 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:36:42 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 09:36:42 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:36:42 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:36:42 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-24 09:36:46 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":4}
+2026-04-24 09:36:46 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 09:36:56 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 09:36:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 09:36:56 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 09:36:56 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":12}
+2026-04-24 09:36:56 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-24 09:36:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:37:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:37:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 09:38:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:38:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 09:39:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 09:39:56 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:41:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 09:42:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 09:43:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 09:44:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 14:19:11 [INFO] ✅ Connected to MongoDB
+2026-04-24 14:19:11 [INFO] 📊 15 diseases already in database
+2026-04-24 14:19:11 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 14:19:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":41}
+2026-04-24 14:20:08 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-04-24 14:20:08 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":15}
+2026-04-24 14:20:08 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 14:20:08 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":7}
+2026-04-24 14:20:08 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":48}
+2026-04-24 14:20:08 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":7}
+2026-04-24 14:20:13 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":44}
+2026-04-24 14:20:22 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:20:22 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 14:20:25 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":12}
+2026-04-24 14:20:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:20:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 14:20:33 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":12}
+2026-04-24 14:20:37 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:20:37 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 14:20:38 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 14:20:42 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":228}
+2026-04-24 14:20:42 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":7}
+2026-04-24 14:20:45 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":3}
+2026-04-24 14:20:45 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":1}
+2026-04-24 14:23:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":18}
+2026-04-24 14:23:48 [INFO] HTTP Request {"method":"POST","path":"/api/auth/register","status":400,"latency_ms":11}
+2026-04-24 14:23:56 [INFO] User logged in {"userId":"69eae3a50520c5c47896cf10"}
+2026-04-24 14:23:56 [INFO] HTTP Request {"method":"POST","path":"/api/auth/login","status":200,"latency_ms":295}
+2026-04-24 14:23:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 14:23:57 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":187}
+2026-04-24 14:23:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 14:23:59 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 14:23:59 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":13}
+2026-04-24 14:23:59 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 14:23:59 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":33}
+2026-04-24 14:23:59 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-24 14:24:04 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":39}
+2026-04-24 14:24:07 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":6}
+2026-04-24 14:24:07 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 14:24:07 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":6}
+2026-04-24 14:24:07 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 14:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":7}
+2026-04-24 14:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 14:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 14:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-24 14:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 14:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-24 14:24:22 [INFO] Starting OCR processing... {"filePath":"/Users/anandchaurasia/Documents/firstapp/backend/uploads/med_1777020862822_t17ptu.png"}
+2026-04-24 14:24:24 [INFO] OCR progress: 0%
+2026-04-24 14:24:24 [INFO] OCR progress: 3%
+2026-04-24 14:24:24 [INFO] OCR progress: 7%
+2026-04-24 14:24:24 [INFO] OCR progress: 11%
+2026-04-24 14:24:24 [INFO] OCR progress: 16%
+2026-04-24 14:24:24 [INFO] OCR progress: 20%
+2026-04-24 14:24:24 [INFO] OCR progress: 24%
+2026-04-24 14:24:25 [INFO] OCR progress: 29%
+2026-04-24 14:24:25 [INFO] OCR progress: 33%
+2026-04-24 14:24:25 [INFO] OCR progress: 37%
+2026-04-24 14:24:25 [INFO] OCR progress: 41%
+2026-04-24 14:24:25 [INFO] OCR progress: 46%
+2026-04-24 14:24:25 [INFO] OCR progress: 50%
+2026-04-24 14:24:25 [INFO] OCR progress: 54%
+2026-04-24 14:24:25 [INFO] OCR progress: 59%
+2026-04-24 14:24:25 [INFO] OCR progress: 63%
+2026-04-24 14:24:25 [INFO] OCR progress: 67%
+2026-04-24 14:24:25 [INFO] OCR progress: 100%
+2026-04-24 14:24:25 [INFO] OCR completed {"textLength":486,"confidence":80}
+2026-04-24 14:24:25 [INFO] File uploaded and processed {"filename":"med_1777020862822_t17ptu.png","textLength":486}
+2026-04-24 14:24:25 [INFO] HTTP Request {"method":"POST","path":"/api/upload","status":200,"latency_ms":2341}
+2026-04-24 14:24:29 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":400,"latency_ms":0}
+2026-04-24 14:24:36 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":400,"latency_ms":1}
+2026-04-24 14:24:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 14:25:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 14:25:40 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 14:26:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 14:26:40 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 14:27:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 14:27:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 14:28:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 14:29:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 14:30:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-24 14:31:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 14:32:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":17}
+2026-04-24 14:41:37 [INFO] ✅ Connected to MongoDB
+2026-04-24 14:41:37 [INFO] 📊 15 diseases already in database
+2026-04-24 14:41:37 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 14:41:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":16}
+2026-04-24 14:43:35 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":23}
+2026-04-24 14:44:09 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":38}
+2026-04-24 14:44:09 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-24 14:44:35 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 14:45:35 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 14:47:18 [INFO] ✅ Connected to MongoDB
+2026-04-24 14:47:18 [INFO] 📊 15 diseases already in database
+2026-04-24 14:47:18 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-24 14:47:21 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":39}
+2026-04-24 14:47:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":263}
+2026-04-24 14:47:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":318}
+2026-04-24 14:47:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 14:48:19 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-04-24 14:48:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 14:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":30}
+2026-04-24 14:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 14:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":7}
+2026-04-24 14:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 14:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":8}
+2026-04-24 14:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 14:48:28 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":51}
+2026-04-24 14:48:32 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-24 14:48:32 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 14:48:35 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":16}
+2026-04-24 14:48:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:48:38 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 14:48:40 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-04-24 14:48:43 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 14:48:43 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:48:49 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":15}
+2026-04-24 14:48:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 14:48:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 14:48:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 14:48:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:49:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 14:49:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 14:49:23 [INFO] Starting OCR processing... {"filePath":"/Users/anandchaurasia/Documents/firstapp/backend/uploads/med_1777022363207_2h19qe.png"}
+2026-04-24 14:49:23 [INFO] OCR progress: 0%
+2026-04-24 14:49:23 [INFO] OCR progress: 3%
+2026-04-24 14:49:23 [INFO] OCR progress: 7%
+2026-04-24 14:49:23 [INFO] OCR progress: 11%
+2026-04-24 14:49:23 [INFO] OCR progress: 16%
+2026-04-24 14:49:23 [INFO] OCR progress: 20%
+2026-04-24 14:49:23 [INFO] OCR progress: 24%
+2026-04-24 14:49:23 [INFO] OCR progress: 29%
+2026-04-24 14:49:23 [INFO] OCR progress: 33%
+2026-04-24 14:49:23 [INFO] OCR progress: 37%
+2026-04-24 14:49:23 [INFO] OCR progress: 41%
+2026-04-24 14:49:23 [INFO] OCR progress: 46%
+2026-04-24 14:49:23 [INFO] OCR progress: 50%
+2026-04-24 14:49:23 [INFO] OCR progress: 54%
+2026-04-24 14:49:23 [INFO] OCR progress: 59%
+2026-04-24 14:49:23 [INFO] OCR progress: 63%
+2026-04-24 14:49:23 [INFO] OCR progress: 67%
+2026-04-24 14:49:23 [INFO] OCR progress: 100%
+2026-04-24 14:49:23 [INFO] OCR completed {"textLength":486,"confidence":80}
+2026-04-24 14:49:23 [INFO] File uploaded and processed {"filename":"med_1777022363207_2h19qe.png","textLength":486}
+2026-04-24 14:49:23 [INFO] HTTP Request {"method":"POST","path":"/api/upload","status":200,"latency_ms":560}
+2026-04-24 14:49:26 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":1}
+2026-04-24 14:49:42 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:49:42 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 14:49:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 14:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 14:50:00 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":15}
+2026-04-24 14:50:10 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 14:50:10 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-04-24 14:50:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 14:50:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:26:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":38}
+2026-04-24 15:27:03 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":50}
+2026-04-24 15:27:07 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":11}
+2026-04-24 15:27:07 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:27:10 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":13}
+2026-04-24 15:27:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:27:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:27:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:28:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:28:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:28:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 15:28:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 15:28:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":10}
+2026-04-24 15:28:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 15:28:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:28:17 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":7}
+2026-04-24 15:28:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 15:28:17 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-24 15:28:21 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":16}
+2026-04-24 15:28:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:28:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:28:27 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:28:27 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-24 15:28:27 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-24 15:28:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 15:28:27 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-24 15:28:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:28:32 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":13}
+2026-04-24 15:28:36 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 15:28:36 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:28:39 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":11}
+2026-04-24 15:28:45 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:28:45 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:28:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:29:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:29:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:29:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":16}
+2026-04-24 15:30:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:30:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:30:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:31:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:31:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:31:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:32:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:32:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:32:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:33:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 15:33:18 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":50}
+2026-04-24 15:33:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:33:27 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":10}
+2026-04-24 15:33:27 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:33:31 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-04-24 15:33:34 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 15:33:34 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 15:33:37 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":12}
+2026-04-24 15:33:50 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-24 15:33:50 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:33:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:34:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:34:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:34:57 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:35:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:35:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:35:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:35:23 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":182}
+2026-04-24 15:35:23 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-24 15:35:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-24 15:35:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-04-24 15:35:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 15:35:53 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":24}
+2026-04-24 15:35:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-24 15:35:53 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":6}
+2026-04-24 15:36:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:36:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:36:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:37:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:37:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:37:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-04-24 15:38:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:38:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:38:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:39:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 15:40:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:40:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:41:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 15:41:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:42:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:42:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:43:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-24 15:43:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:44:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:44:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:45:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 15:45:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:46:06 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:46:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-24 15:46:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:46:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:47:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:47:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-04-24 15:47:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:48:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:48:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:49:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:49:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:50:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":10}
+2026-04-24 15:50:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:51:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:51:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:52:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-24 15:52:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:52:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:52:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":17}
+2026-04-24 15:53:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:53:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 15:53:36 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":13}
+2026-04-24 15:53:36 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-24 15:53:36 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":27}
+2026-04-24 15:53:36 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 15:53:53 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":6}
+2026-04-24 15:54:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":16}
+2026-04-24 15:55:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:56:08 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-04-24 15:56:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:56:22 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-04-24 15:56:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 15:56:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:56:45 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":14}
+2026-04-24 15:56:45 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":51}
+2026-04-24 15:56:45 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":1}
+2026-04-24 15:56:45 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":4}
+2026-04-24 15:57:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:57:15 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 15:57:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:58:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:58:15 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:58:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 15:59:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:59:15 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 15:59:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:00:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:01:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:01:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 16:02:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:02:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:03:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-04-24 16:03:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 16:04:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:04:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:04:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-24 16:05:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 16:05:15 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 16:05:45 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 16:06:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:06:15 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 16:06:18 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":120}
+2026-04-24 16:06:18 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-24 16:06:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-04-24 16:06:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-24 16:06:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-24 16:06:31 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":14}
+2026-04-24 16:06:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 16:06:31 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":4}
+2026-04-24 16:07:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 16:07:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:07:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:08:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:08:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-24 16:08:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:09:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:09:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:09:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:10:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:10:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:10:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:11:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:11:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:11:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:12:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-24 16:12:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:12:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:12:33 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":48}
+2026-04-24 16:12:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 16:12:51 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-24 16:13:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 16:13:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:13:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":13}
+2026-04-24 16:14:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":24}
+2026-04-24 16:14:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-24 16:14:26 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":67}
+2026-04-24 16:14:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 16:14:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":7}
+2026-04-24 16:14:46 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-24 16:14:55 [INFO] Starting OCR processing... {"filePath":"/Users/anandchaurasia/Documents/firstapp/backend/uploads/med_1777027495393_wbbmxz.png"}
+2026-04-24 16:14:55 [INFO] OCR progress: 0%
+2026-04-24 16:14:55 [INFO] OCR progress: 3%
+2026-04-24 16:14:55 [INFO] OCR progress: 7%
+2026-04-24 16:14:55 [INFO] OCR progress: 11%
+2026-04-24 16:14:55 [INFO] OCR progress: 16%
+2026-04-24 16:14:55 [INFO] OCR progress: 20%
+2026-04-24 16:14:55 [INFO] OCR progress: 24%
+2026-04-24 16:14:55 [INFO] OCR progress: 29%
+2026-04-24 16:14:55 [INFO] OCR progress: 33%
+2026-04-24 16:14:55 [INFO] OCR progress: 37%
+2026-04-24 16:14:55 [INFO] OCR progress: 41%
+2026-04-24 16:14:55 [INFO] OCR progress: 46%
+2026-04-24 16:14:55 [INFO] OCR progress: 50%
+2026-04-24 16:14:55 [INFO] OCR progress: 54%
+2026-04-24 16:14:55 [INFO] OCR progress: 59%
+2026-04-24 16:14:55 [INFO] OCR progress: 63%
+2026-04-24 16:14:55 [INFO] OCR progress: 67%
+2026-04-24 16:14:55 [INFO] OCR progress: 100%
+2026-04-24 16:14:55 [INFO] OCR completed {"textLength":486,"confidence":80}
+2026-04-24 16:14:55 [INFO] File uploaded and processed {"filename":"med_1777027495393_wbbmxz.png","textLength":486}
+2026-04-24 16:14:55 [INFO] HTTP Request {"method":"POST","path":"/api/upload","status":200,"latency_ms":460}
+2026-04-24 16:15:00 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":0}
+2026-04-24 16:15:01 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":13}
+2026-04-24 16:15:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-24 16:15:25 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":74}
+2026-04-24 16:15:25 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":6}
+2026-04-24 16:15:32 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":4}
+2026-04-24 16:15:32 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":2}
+2026-04-24 16:15:56 [INFO] HTTP Request {"method":"POST","path":"/api/admin/diseases","status":201,"latency_ms":14}
+2026-04-24 16:15:56 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":200,"latency_ms":2}
+2026-04-24 16:16:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":12}
+2026-04-24 16:16:35 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":32}
+2026-04-24 16:16:35 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":3}
+2026-04-24 16:17:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":10}
+2026-04-24 16:18:14 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-24 16:18:31 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-25 16:32:10 [INFO] ✅ Connected to MongoDB
+2026-04-25 16:32:10 [INFO] 📊 16 diseases already in database
+2026-04-25 16:32:10 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-25 16:35:26 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":34}
+2026-04-25 16:35:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":9}
+2026-04-25 16:35:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-25 16:35:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-04-25 16:35:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":22}
+2026-04-25 16:35:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":57}
+2026-04-25 16:35:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-25 16:35:34 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":60}
+2026-04-25 16:35:39 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-25 16:35:39 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-25 16:35:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-25 16:35:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-25 16:35:52 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":29}
+2026-04-25 16:35:58 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-25 16:35:58 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-25 16:36:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-25 16:36:00 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-25 16:36:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-25 16:36:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-25 16:36:10 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":133}
+2026-04-25 16:36:10 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-25 16:36:18 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":7}
+2026-04-25 16:36:18 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-25 16:36:31 [INFO] HTTP Request {"method":"GET","path":"/api/auth/me","status":304,"latency_ms":5}
+2026-04-25 16:36:31 [INFO] HTTP Request {"method":"GET","path":"/api/auth/me","status":304,"latency_ms":2}
+2026-04-25 16:36:31 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":8}
+2026-04-25 16:36:31 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":3}
+2026-04-29 22:22:19 [INFO] ✅ Connected to MongoDB
+2026-04-29 22:22:19 [INFO] 📊 16 diseases already in database
+2026-04-29 22:22:19 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-29 22:22:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":20}
+2026-04-29 22:22:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":27}
+2026-04-29 22:22:48 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":27}
+2026-04-29 22:22:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":51}
+2026-04-29 22:22:51 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":119}
+2026-04-29 22:22:55 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":17}
+2026-04-29 22:22:55 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-04-29 22:22:57 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":14}
+2026-04-29 22:23:02 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-29 22:23:02 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-29 22:23:04 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":6}
+2026-04-29 22:23:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":45}
+2026-04-29 22:23:20 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":16}
+2026-04-29 22:23:20 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-29 22:23:23 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":46}
+2026-04-29 22:23:26 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-29 22:23:26 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":9}
+2026-04-29 22:23:29 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":13}
+2026-04-29 22:23:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-29 22:23:31 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-29 22:23:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":19}
+2026-04-29 22:23:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-29 22:24:09 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":75}
+2026-04-29 22:24:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-29 22:24:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-04-29 22:24:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-29 22:24:54 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":200,"latency_ms":3}
+2026-04-29 22:24:54 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":15}
+2026-04-29 22:24:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":17}
+2026-04-29 22:25:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-29 22:25:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-29 22:25:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-29 22:25:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:26:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-29 22:26:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:26:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:26:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:27:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-29 22:27:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-29 22:27:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-29 22:27:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:28:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:28:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:28:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:28:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:29:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-29 22:29:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-29 22:29:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-29 22:29:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-29 22:30:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-30 17:10:41 [INFO] ✅ Connected to MongoDB
+2026-04-30 17:10:41 [INFO] 📊 16 diseases already in database
+2026-04-30 17:10:41 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-04-30 17:10:41 [INFO] 📡 WebSocket server ready on port 5001
+2026-04-30 17:10:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":23}
+2026-04-30 17:11:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":200,"latency_ms":4}
+2026-04-30 17:11:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:11:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:11:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-30 17:11:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:11:54 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":66}
+2026-04-30 17:11:54 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":61}
+2026-04-30 17:11:54 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:11:54 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":14}
+2026-04-30 17:12:00 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:00 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":37}
+2026-04-30 17:12:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:12:06 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:12:06 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:12:09 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:09 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-30 17:12:15 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:12:15 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:12:18 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:18 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-30 17:12:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:12:25 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-30 17:12:25 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:12:27 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:27 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":6}
+2026-04-30 17:12:32 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:12:32 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:12:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:12:35 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:35 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-30 17:12:40 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-30 17:12:40 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:12:43 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:43 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-30 17:12:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:12:48 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:12:50 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:12:50 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-04-30 17:12:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:12:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:12:57 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:12:57 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:13:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:13:04 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:13:04 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-30 17:13:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:13:11 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:13:15 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:13:15 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":7}
+2026-04-30 17:13:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:13:25 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-04-30 17:13:25 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-30 17:13:28 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:13:28 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":8}
+2026-04-30 17:13:33 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:13:33 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:13:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:13:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:13:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:14:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:14:18 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":3}
+2026-04-30 17:14:29 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":2}
+2026-04-30 17:14:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:14:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:15:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:15:03 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-04-30 17:15:16 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":69}
+2026-04-30 17:15:16 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":5}
+2026-04-30 17:15:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":69}
+2026-04-30 17:15:30 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:15:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":14}
+2026-04-30 17:15:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:15:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":17}
+2026-04-30 17:15:30 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":2}
+2026-04-30 17:15:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:15:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:16:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:16:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-30 17:16:05 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":9}
+2026-04-30 17:16:05 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":2}
+2026-04-30 17:16:07 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:16:07 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":3}
+2026-04-30 17:16:07 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":4}
+2026-04-30 17:16:07 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":9}
+2026-04-30 17:16:07 [INFO] 🔌 WebSocket client connected: Bp10FyhtCTANDf45AAAC
+2026-04-30 17:16:16 [INFO] 🔌 WebSocket client disconnected: Bp10FyhtCTANDf45AAAC
+2026-04-30 17:16:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-04-30 17:16:17 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":29}
+2026-04-30 17:16:17 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":28}
+2026-04-30 17:16:20 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":49}
+2026-04-30 17:16:20 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":3}
+2026-04-30 17:16:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:16:36 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":4}
+2026-04-30 17:16:36 [INFO] HTTP Request {"method":"GET","path":"/api/admin/diseases","status":304,"latency_ms":4}
+2026-04-30 17:16:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":13}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":23}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":21}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":26}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":34}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:16:54 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":3}
+2026-04-30 17:17:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:17:04 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":4}
+2026-04-30 17:17:14 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:17:15 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":6}
+2026-04-30 17:17:19 [INFO] 📡 WebSocket: emitted new_prediction
+2026-04-30 17:17:19 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-04-30 17:17:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:17:25 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:17:25 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-04-30 17:17:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:17:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:17:54 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:18:00 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-04-30 17:18:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-30 17:18:00 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":101}
+2026-04-30 17:18:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:18:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:18:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:18:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:19:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:19:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:19:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:19:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:19:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:20:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:20:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:20:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:20:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:20:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:21:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:21:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:21:27 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-30 17:21:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:21:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:21:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:21:42 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":148}
+2026-04-30 17:21:42 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":200,"latency_ms":213}
+2026-04-30 17:21:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:22:00 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:22:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:22:24 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":70}
+2026-04-30 17:22:30 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:22:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:22:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:22:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:22:49 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":9}
+2026-04-30 17:22:49 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-30 17:22:49 [INFO] 🔌 WebSocket client connected: IcT9O2gv-6YW_r35AAAF
+2026-04-30 17:22:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:22:59 [INFO] 🔌 WebSocket client connected: mJN2MpLQhL7aaxXmAAAH
+2026-04-30 17:22:59 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":21}
+2026-04-30 17:22:59 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":39}
+2026-04-30 17:22:59 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":6}
+2026-04-30 17:22:59 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:23:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:23:06 [INFO] 🔌 WebSocket client disconnected: mJN2MpLQhL7aaxXmAAAH
+2026-04-30 17:23:07 [INFO] 🔌 WebSocket client disconnected: IcT9O2gv-6YW_r35AAAF
+2026-04-30 17:23:07 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-04-30 17:23:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:23:49 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":31}
+2026-04-30 17:23:49 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":30}
+2026-04-30 17:23:49 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":156}
+2026-04-30 17:23:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:24:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":10}
+2026-04-30 17:24:15 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":71}
+2026-04-30 17:24:32 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:24:32 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:24:32 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":11}
+2026-04-30 17:24:32 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":1}
+2026-04-30 17:24:32 [INFO] 🔌 WebSocket client connected: aAu-vpQ78ye9J5HYAAAK
+2026-04-30 17:24:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:24:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:25:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:25:28 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":25}
+2026-04-30 17:25:28 [INFO] 🔌 WebSocket client connected: 2QKzKSwdh8X852tAAAAN
+2026-04-30 17:25:28 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":80}
+2026-04-30 17:25:28 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":43}
+2026-04-30 17:25:28 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:25:30 [INFO] 🔌 WebSocket client disconnected: 2QKzKSwdh8X852tAAAAN
+2026-04-30 17:25:31 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":200,"latency_ms":39}
+2026-04-30 17:25:31 [INFO] HTTP Request {"method":"GET","path":"/api/admin/stats","status":304,"latency_ms":5}
+2026-04-30 17:25:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:25:39 [INFO] 🔌 WebSocket client connected: YtE-CBvdgVQNzwSMAAAQ
+2026-04-30 17:25:39 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":15}
+2026-04-30 17:25:39 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":27}
+2026-04-30 17:25:40 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":5}
+2026-04-30 17:25:40 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-30 17:25:40 [INFO] 🔌 WebSocket client disconnected: YtE-CBvdgVQNzwSMAAAQ
+2026-04-30 17:25:47 [INFO] 🔌 WebSocket client connected: 4TSL_voG39a0E3mIAAAT
+2026-04-30 17:25:47 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":5}
+2026-04-30 17:25:47 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:25:47 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":4}
+2026-04-30 17:25:47 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:25:49 [INFO] 🔌 WebSocket client disconnected: 4TSL_voG39a0E3mIAAAT
+2026-04-30 17:25:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:25:52 [INFO] 🔌 WebSocket client connected: awT86DuUJz_pnt69AAAW
+2026-04-30 17:25:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":21}
+2026-04-30 17:25:52 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":7}
+2026-04-30 17:25:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:25:52 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-04-30 17:25:55 [INFO] 🔌 WebSocket client disconnected: awT86DuUJz_pnt69AAAW
+2026-04-30 17:25:55 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-30 17:25:55 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":12}
+2026-04-30 17:25:55 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":17}
+2026-04-30 17:25:55 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-04-30 17:25:55 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":56}
+2026-04-30 17:25:55 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-04-30 17:26:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:26:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:26:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:26:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":8}
+2026-04-30 17:26:55 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:27:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:27:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:27:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:27:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:27:55 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:28:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:28:25 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:28:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:28:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:28:55 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-04-30 17:29:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:29:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:29:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-04-30 17:29:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-04-30 17:30:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:30:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:30:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:30:52 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-04-30 17:31:03 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-04-30 17:31:33 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:31:40 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-04-30 17:31:41 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 13:48:37 [INFO] ✅ Connected to MongoDB
+2026-05-01 13:48:37 [INFO] 📊 16 diseases already in database
+2026-05-01 13:48:37 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-05-01 13:48:37 [INFO] 📡 WebSocket server ready on port 5001
+2026-05-01 13:48:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:48:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":9}
+2026-05-01 13:48:53 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":19}
+2026-05-01 13:48:58 [INFO] 📡 WebSocket: emitted new_prediction
+2026-05-01 13:48:58 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":28}
+2026-05-01 13:49:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":4}
+2026-05-01 13:49:17 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-05-01 13:49:21 [INFO] 📡 WebSocket: emitted new_prediction
+2026-05-01 13:49:21 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":10}
+2026-05-01 13:49:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 13:49:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:50:12 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-05-01 13:50:12 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":9}
+2026-05-01 13:50:23 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-05-01 13:50:29 [INFO] 📡 WebSocket: emitted new_prediction
+2026-05-01 13:50:29 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":9}
+2026-05-01 13:50:53 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-05-01 13:50:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":5}
+2026-05-01 13:50:53 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-05-01 13:51:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 13:51:16 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 13:51:16 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":28}
+2026-05-01 13:51:16 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":9}
+2026-05-01 13:51:16 [INFO] 🔌 WebSocket client connected: s-CP2IaJhLsv1s5aAAAC
+2026-05-01 13:51:23 [INFO] 🔌 WebSocket client disconnected: s-CP2IaJhLsv1s5aAAAC
+2026-05-01 13:51:32 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-05-01 13:51:38 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":2}
+2026-05-01 13:52:53 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":4}
+2026-05-01 13:52:53 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":2}
+2026-05-01 13:53:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":11}
+2026-05-01 13:53:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":9}
+2026-05-01 13:53:21 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":14}
+2026-05-01 13:53:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":1}
+2026-05-01 13:53:21 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-05-01 13:53:21 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":2}
+2026-05-01 13:53:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:54:21 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 13:54:51 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:55:18 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-05-01 13:55:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-05-01 13:55:18 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":8}
+2026-05-01 13:55:18 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":14}
+2026-05-01 13:55:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 13:55:18 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":6}
+2026-05-01 13:55:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:56:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:56:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 13:57:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:57:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 13:58:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 13:58:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 13:59:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:00:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:01:10 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:01:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:01:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-05-01 14:02:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-05-01 14:02:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:03:18 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:03:48 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:04:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:05:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 14:06:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:07:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:08:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 14:09:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:10:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:11:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:12:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:13:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:14:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:15:11 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-05-01 14:15:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":3}
+2026-05-01 14:15:50 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-05-01 14:16:16 [INFO] ✅ Connected to MongoDB
+2026-05-01 14:16:16 [INFO] 📊 16 diseases already in database
+2026-05-01 14:16:16 [INFO] 🏥 MediScan AI Backend on port 5001
+2026-05-01 14:16:16 [INFO] 📡 WebSocket server ready on port 5001
+2026-05-01 14:16:30 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":3}
+2026-05-01 14:16:32 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-05-01 14:16:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":15}
+2026-05-01 14:16:43 [INFO] File uploaded and processed {"filename":"med_1777625203763_zq1g84.txt","method":"txt","textLength":114,"confidence":100}
+2026-05-01 14:16:43 [INFO] HTTP Request {"method":"POST","path":"/api/upload","status":200,"latency_ms":4}
+2026-05-01 14:17:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:17:48 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":3}
+2026-05-01 14:18:12 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":4}
+2026-05-01 14:18:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:19:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-05-01 14:19:39 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":2}
+2026-05-01 14:19:48 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":200,"latency_ms":46}
+2026-05-01 14:19:48 [INFO] HTTP Request {"method":"GET","path":"/api/history","status":304,"latency_ms":3}
+2026-05-01 14:19:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:19:50 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":2}
+2026-05-01 14:19:50 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":54}
+2026-05-01 14:19:50 [INFO] HTTP Request {"method":"GET","path":"/api/symptoms","status":304,"latency_ms":3}
+2026-05-01 14:19:50 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":106}
+2026-05-01 14:19:50 [INFO] HTTP Request {"method":"GET","path":"/api/model-info","status":304,"latency_ms":5}
+2026-05-01 14:20:06 [INFO] File uploaded and processed {"filename":"med_1777625406744_fb1jg7.txt","method":"txt","textLength":990,"confidence":100}
+2026-05-01 14:20:06 [INFO] HTTP Request {"method":"POST","path":"/api/upload","status":200,"latency_ms":5}
+2026-05-01 14:20:11 [INFO] HTTP Request {"method":"POST","path":"/api/predict","status":200,"latency_ms":2}
+2026-05-01 14:20:20 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":7}
+2026-05-01 14:20:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:20:44 [INFO] HTTP Request {"method":"POST","path":"/api/chatbot","status":200,"latency_ms":1}
+2026-05-01 14:21:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":6}
+2026-05-01 14:22:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:23:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-05-01 14:24:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:25:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}
+2026-05-01 14:26:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":4}
+2026-05-01 14:27:34 [INFO] HTTP Request {"method":"GET","path":"/api/health","status":304,"latency_ms":5}

@@ -1,0 +1,32 @@
+{
+  "model_type": "DecisionTreeClassifier",
+  "trained_at": "2026-04-23T17:02:08.018604+00:00",
+  "feature_count": 60,
+  "disease_count": 15,
+  "diseases": [
+    "Allergic Rhinitis",
+    "Anxiety Disorder",
+    "Bronchitis",
+    "COVID-19 (Suspected)",
+    "Common Cold",
+    "Common Flu (Influenza)",
+    "Conjunctivitis (Pink Eye)",
+    "Dehydration",
+    "Diabetes Symptoms",
+    "Food Poisoning",
+    "Gastroenteritis",
+    "Hypertension Alert",
+    "Migraine",
+    "Pneumonia (Suspected)",
+    "Urinary Tract Infection (UTI)"
+  ],
+  "metrics": {
+    "train_accuracy": 92.7,
+    "test_accuracy": 92.75,
+    "cv_mean_accuracy": 81.74,
+    "cv_std": 4.06,
+    "tree_depth": 20,
+    "n_leaves": 49
+  },
+  "version": "2.0.0"
+}
